@@ -1,12 +1,14 @@
-[
-  {
+
+{ 
+    "itens": {
+
       "canecas": [
                 {
-                    "ID": "1",
-                    "Nome": "item-1",
+                    "id": "1",
+                    "nome": "item-1",
                     "descricao": "Descrevendo o iten-1",
                     "valor": 999.00,
-                    "linkML": "https://www.mercadolivre.com.br/",
+                    "linkMl": "https://www.mercadolivre.com.br/",
                     "foto": {
                         "im1": "",
                         "im2": "",
@@ -16,11 +18,11 @@
                 },
 
                 {
-                    "ID": "2",
-                    "Nome": "item-2",
+                    "id": "2",
+                    "nome": "item-2",
                     "descricao": "Descrevendo o iten-2",
                     "valor": 999.00,
-                    "linkML": "https://www.mercadolivre.com.br/",
+                    "linkMl": "https://www.mercadolivre.com.br/",
                     "foto": {
                         "im1": "",
                         "im2": "",
@@ -29,11 +31,11 @@
                     }
                 },
                 {
-                    "ID": "3",
-                    "Nome": "item-3",
+                    "id": "3",
+                    "nome": "item-3",
                     "descricao": "Descrevendo o iten-3",
                     "valor": 999.00,
-                    "linkML": "https://www.mercadolivre.com.br/",
+                    "linkMl": "https://www.mercadolivre.com.br/",
                     "foto": {
                         "im1": "",
                         "im2": "",
@@ -42,11 +44,11 @@
                     }
                 },
                 {
-                    "ID": "4",
-                    "Nome": "item-4",
+                    "id": "4",
+                    "nome": "item-4",
                     "descricao": "Descrevendo o iten-4",
                     "valor": 999.00,
-                    "linkML": "https://www.mercadolivre.com.br/",
+                    "linkMl": "https://www.mercadolivre.com.br/",
                     "foto": {
                         "im1": "",
                         "im2": "",
@@ -55,11 +57,79 @@
                     }
                 },
                 {
-                    "ID": "5",
-                    "Nome": "item-5",
+                    "id": "5",
+                    "nome": "item-5",
                     "descricao": "Descrevendo o iten-5",
                     "valor": 999.00,
-                    "linkML": "https://www.mercadolivre.com.br/",
+                    "linkMl": "https://www.mercadolivre.com.br/",
+                    "foto": {
+                        "im1": "",
+                        "im2": "",
+                        "im3": "",
+                        "im4": ""
+                    }
+                }
+            ],
+            "squeezes": [
+                {
+                    "id": "1",
+                    "nome": "item-1",
+                    "descricao": "Descrevendo o iten-1",
+                    "valor": 999.00,
+                    "linkMl": "https://www.mercadolivre.com.br/",
+                    "foto": {
+                        "im1": "",
+                        "im2": "",
+                        "im3": "",
+                        "im4": ""
+                    }
+                },
+
+                {
+                    "id": "2",
+                    "nome": "item-2",
+                    "descricao": "Descrevendo o iten-2",
+                    "valor": 999.00,
+                    "linkMl": "https://www.mercadolivre.com.br/",
+                    "foto": {
+                        "im1": "",
+                        "im2": "",
+                        "im3": "",
+                        "im4": ""
+                    }
+                },
+                {
+                    "id": "3",
+                    "nome": "item-3",
+                    "descricao": "Descrevendo o iten-3",
+                    "valor": 999.00,
+                    "linkMl": "https://www.mercadolivre.com.br/",
+                    "foto": {
+                        "im1": "",
+                        "im2": "",
+                        "im3": "",
+                        "im4": ""
+                    }
+                },
+                {
+                    "id": "4",
+                    "nome": "item-4",
+                    "descricao": "Descrevendo o iten-4",
+                    "valor": 999.00,
+                    "linkMl": "https://www.mercadolivre.com.br/",
+                    "foto": {
+                        "im1": "",
+                        "im2": "",
+                        "im3": "",
+                        "im4": ""
+                    }
+                },
+                {
+                    "id": "5",
+                    "nome": "item-5",
+                    "descricao": "Descrevendo o iten-5",
+                    "valor": 999.00,
+                    "linkMl": "https://www.mercadolivre.com.br/",
                     "foto": {
                         "im1": "",
                         "im2": "",
@@ -71,11 +141,11 @@
 
             "camisas": [
                         {
-                            "ID": "1",
-                            "Nome": "item-1",
+                            "id": "1",
+                            "nome": "item-1",
                             "descricao": "Descrevendo o iten-1",
                             "valor": 999.00,
-                            "linkML": "https://www.mercadolivre.com.br/",
+                            "linkMl": "https://www.mercadolivre.com.br/",
                             "foto": {
                                 "im1": "",
                                 "im2": "",
@@ -85,11 +155,11 @@
                         },
 
                         {
-                            "ID": "2",
-                            "Nome": "item-2",
+                            "id": "2",
+                            "nome": "item-2",
                             "descricao": "Descrevendo o iten-2",
                             "valor": 999.00,
-                            "linkML": "https://www.mercadolivre.com.br/",
+                            "linkMl": "https://www.mercadolivre.com.br/",
                             "foto": {
                                 "im1": "",
                                 "im2": "",
@@ -98,11 +168,11 @@
                             }
                         },
                         {
-                            "ID": "3",
-                            "Nome": "item-3",
+                            "id": "3",
+                            "nome": "item-3",
                             "descricao": "Descrevendo o iten-3",
                             "valor": 999.00,
-                            "linkML": "https://www.mercadolivre.com.br/",
+                            "linkMl": "https://www.mercadolivre.com.br/",
                             "foto": {
                                 "im1": "",
                                 "im2": "",
@@ -111,11 +181,11 @@
                             }
                         },
                         {
-                            "ID": "4",
-                            "Nome": "item-4",
+                            "id": "4",
+                            "nome": "item-4",
                             "descricao": "Descrevendo o iten-4",
                             "valor": 999.00,
-                            "linkML": "https://www.mercadolivre.com.br/",
+                            "linkMl": "https://www.mercadolivre.com.br/",
                             "foto": {
                                 "im1": "",
                                 "im2": "",
@@ -124,11 +194,11 @@
                             }
                         },
                         {
-                            "ID": "5",
-                            "Nome": "item-5",
+                            "id": "5",
+                            "nome": "item-5",
                             "descricao": "Descrevendo o iten-5",
                             "valor": 999.00,
-                            "linkML": "https://www.mercadolivre.com.br/",
+                            "linkMl": "https://www.mercadolivre.com.br/",
                             "foto": {
                                 "im1": "",
                                 "im2": "",
@@ -141,11 +211,11 @@
             "adesivos" :
                     [
                         {
-                            "ID": "1",
-                            "Nome": "item-1",
+                            "id": "1",
+                            "nome": "item-1",
                             "descricao": "Descrevendo o iten-1",
                             "valor": 999.00,
-                            "linkML": "https://www.mercadolivre.com.br/",
+                            "linkMl": "https://www.mercadolivre.com.br/",
                             "foto": {
                                 "im1": "",
                                 "im2": "",
@@ -155,11 +225,11 @@
                         },
 
                         {
-                            "ID": "2",
-                            "Nome": "item-2",
+                            "id": "2",
+                            "nome": "item-2",
                             "descricao": "Descrevendo o iten-2",
                             "valor": 999.00,
-                            "linkML": "https://www.mercadolivre.com.br/",
+                            "linkMl": "https://www.mercadolivre.com.br/",
                             "foto": {
                                 "im1": "",
                                 "im2": "",
@@ -168,11 +238,11 @@
                             }
                         },
                         {
-                            "ID": "3",
-                            "Nome": "item-3",
+                            "id": "3",
+                            "nome": "item-3",
                             "descricao": "Descrevendo o iten-3",
                             "valor": 999.00,
-                            "linkML": "https://www.mercadolivre.com.br/",
+                            "linkMl": "https://www.mercadolivre.com.br/",
                             "foto": {
                                 "im1": "",
                                 "im2": "",
@@ -181,11 +251,11 @@
                             }
                         },
                         {
-                            "ID": "4",
-                            "Nome": "item-4",
+                            "id": "4",
+                            "nome": "item-4",
                             "descricao": "Descrevendo o iten-4",
                             "valor": 999.00,
-                            "linkML": "https://www.mercadolivre.com.br/",
+                            "linkMl": "https://www.mercadolivre.com.br/",
                             "foto": {
                                 "im1": "",
                                 "im2": "",
@@ -194,11 +264,11 @@
                             }
                         },
                         {
-                            "ID": "5",
-                            "Nome": "item-5",
+                            "id": "5",
+                            "nome": "item-5",
                             "descricao": "Descrevendo o iten-5",
                             "valor": 999.00,
-                            "linkML": "https://www.mercadolivre.com.br/",
+                            "linkMl": "https://www.mercadolivre.com.br/",
                             "foto": {
                                 "im1": "",
                                 "im2": "",
@@ -207,7 +277,8 @@
                             }
                         }
                     ]
+                
+                }
          }
-      
+        
 
-]
