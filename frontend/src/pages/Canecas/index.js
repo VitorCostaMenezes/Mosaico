@@ -6,7 +6,7 @@ import RetornaItens from '../../components/RetornaItens';
 
 export default function Canecas () {
    
-    const [allCanecas, setAllCanecas] = useState([]);
+    const [allCanecas, setAllCanecas] = useState([]);  ///  o segredo são as chaves
  
   useEffect(() => {
 
@@ -17,12 +17,16 @@ export default function Canecas () {
 
       const todosItens = json;
 
-      const todasCanecas = todosItens.canecas.map(({id, nome, descricao, valor, linkMl, foto }) => {
-        return { id, nome, descricao, valor,linkMl,foto };});
+      // const todasCanecas = todosItens.canecas.map(({id, nome, descricao, valor, linkMl, foto }) => {
+      //   return { id, nome, descricao, valor,linkMl,foto };});
 
 
-        setAllCanecas(todasCanecas);
-        console.log(todasCanecas);
+        // setAllCanecas(todasCanecas);
+        // console.log(todasCanecas);
+
+
+        setAllCanecas(todosItens.canecas);
+
      
     }
 
@@ -39,7 +43,7 @@ export default function Canecas () {
     
         
         <Link to="/home" id="home">
-            <span>Home</span>
+            <span>  Home </span>
         </Link>
 
 

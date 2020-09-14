@@ -10,7 +10,7 @@
                     "valor": 999.00,
                     "linkMl": "https://www.mercadolivre.com.br/",
                     "foto": {
-                        "im1": "",
+                        "im1": "/img/canecas/imagem-01.jpeg", 
                         "im2": "",
                         "im3": "",
                         "im4": ""
