@@ -286,8 +286,6 @@
                             "foto": "/img/home/homeCaneca-01.jpeg",
                             "foto2": "/img/home/homeSqueeze-01.jpeg",
                             "foto3": "/img/home/homeCamisa-01.jpg"
-
-
                         },
 
                         {
@@ -302,10 +300,8 @@
                             "link": "/camisas",
                             "foto": "/img/home/homeCamisa-01.jpg"
                         }
-                       
-
-                       
-                        
+              
+                     
                     ]
                 
                 }

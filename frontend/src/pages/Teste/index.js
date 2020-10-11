@@ -12,31 +12,16 @@ import Typography from '@material-ui/core/Typography';
 import Linkar from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Box from '@material-ui/core/Box';
 import CardMedia from '@material-ui/core/CardMedia';
 import Logo from  '../../img/home/logoHome.png'
 import { Link } from "react-router-dom";
+import CarouselHome from '../../components/CarouselHome';
+import Footer from '../../components/Footer';
 
 
-
-
-function Copyright() {
-
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Linkar color="inherit" href="https://material-ui.com/">
-        Mosaico Personalizados
-      </Linkar>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
 
 const desativaLink = {
   ss:{
-    
       textDecoration: 'none',
       margin: 10,
       width: "100%",
@@ -50,6 +35,7 @@ const areaLogo = {
   }
 }
 
+
 const useStyles = makeStyles((theme) => ({
   '@global': {
     ul: {
@@ -61,15 +47,18 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     borderBottom: `1px solid ${theme.palette.divider}`,
     // backgroundColor: 'yellow'
+    
   },
   toolbar: {
     flexWrap: 'wrap',
+    justifyContent: "space-around",
   },
   toolbarTitle: {
     flexGrow: 1,
   },
   link: {
     margin: theme.spacing(1, 1.5),
+    fontSize: 14
   },
   heroContent: {
     padding: theme.spacing(8, 0, 6),
@@ -83,38 +72,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'baseline',
     marginBottom: theme.spacing(2),
-  },
-  footer: {
-    borderTop: `1px solid ${theme.palette.divider}`,
-    marginTop: theme.spacing(8),
-    paddingTop: theme.spacing(3),
-    paddingBottom: theme.spacing(3),
-    [theme.breakpoints.up('sm')]: {
-      paddingTop: theme.spacing(6),
-      paddingBottom: theme.spacing(6),
-    },
-  },
+  }
 }));
 
 
-const footers = [
-  {
-    title: 'Company',
-    description: ['Team', 'History', 'Contact us', 'Locations'],
-  },
-  {
-    title: 'Features',
-    description: ['Cool stuff', 'Random feature', 'Team feature', 'Developer stuff', 'Another one'],
-  },
-  {
-    title: 'Resources',
-    description: ['Resource', 'Resource name', 'Another resource', 'Final resource'],
-  },
-  {
-    title: 'Legal',
-    description: ['Privacy policy', 'Terms of use'],
-  },
-];
 
 export default function Teste() {
 
@@ -138,58 +99,99 @@ export default function Teste() {
 
 
 
-
-
   const classes = useStyles();
 
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
 
-        <Toolbar className={classes.toolbar}>
+      <AppBar position="static" color="default" elevation={0} className={classes.appBar} >
+    
+        <Toolbar className={classes.toolbar} >
 
-          <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
-            Mosaico Personalizados
-            {/* <img src={Logo} id="logo" className={classes.img} /> */}
-          </Typography>
+                
+                
+        <Grid container   direction="row" justify="space-around" alignItems= "center" >
+        
 
-          <nav>
-            <Linkar variant="button" color="textPrimary" href="#" className={classes.link}>
-              Quem somos
-            </Linkar>
-            <Linkar variant="button" color="textPrimary" href="#" className={classes.link}>
-              Produtos
-            </Linkar>
-            <Linkar variant="button" color="textPrimary" href="#" className={classes.link}>
-              Contatos
-            </Linkar>
-          </nav>
+            {/* <Container maxWidth="lg" component="main" className={classes.heroContent}  > */}
+            <Grid item  xs={12} sm={4} md={4}  lg={3}  >
 
+              <Grid container
+                direction="row"
+                justify="space-around"
+                alignItems="center">
+
+                 <img class="d-block w-50 my-3" src={Logo} />          
+
+              </Grid>
+
+
+            </Grid>
+            {/* </Container> */}
+
+            {/* <Container maxWidth="xs" component="main" className={classes.heroContent}  > */}
+
+
+          <Grid item  xs={12} sm={6} md={6}  lg={6}  >
+
+          <Grid container
+                direction="row"
+                justify="space-around"
+                alignItems= "center"
+                >
+
+              <nav class="my-3">
+                <Linkar variant="button" color="textPrimary" href="#" className={classes.link} >
+                  Quem somos
+                </Linkar>
+                <Linkar variant="button" color="textPrimary" href="#" className={classes.link}>
+                  Produtos
+                </Linkar>
+                <Linkar variant="button" color="textPrimary" href="#" className={classes.link}>
+                  Contatos
+                </Linkar>
+              </nav>
+            {/* </Container> */}
+
+            </Grid>
+        
+          </Grid>
+          </Grid>
         </Toolbar>
 
       </AppBar>
 
+
+
+      <Container maxWidth="lg" component="main" className={classes.heroContent} >
+          <CarouselHome />
+      </Container>
+
+
+
       {/* Hero unit */}
-      <Container maxWidth="sm" component="main" className={classes.heroContent}>
+      <Container maxWidth="sm" component="main" className={classes.heroContent} style={{marginTop: -50, marginBottom: 30, padding: 10}}>
+
         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
           Catálogo virtual
         </Typography>
-        <Typography variant="h5" align="center" color="textSecondary" component="p">
+
+        <Typography variant="h6" align="center" color="textSecondary" component="p">
           Confira nossos produtos e preços!
         </Typography>
-        <Typography variant="h5" align="center" color="textSecondary" component="p">
-
-          Para esclarecimento de dúvidas entre em contato conosco através da aba contatos.
+        
+        <Typography variant="h6" align="center" color="textSecondary" component="p">
+            Para esclarecimento de dúvidas entre em contato conosco através da aba contatos.
         </Typography>
-            {/* <img src={Logo} id="logo" className={classes.img} /> */}
 
       </Container>
       {/* End hero unit */}
 
 
-      <Container maxWidth="md" component="main">
 
+
+     <Container maxWidth="md" component="main">
 
         <Grid container spacing={5} alignItems="flex-end" justify="space-around">
         
@@ -206,7 +208,7 @@ export default function Teste() {
                   className={classes.cardHeader}
                 />
                 <CardContent>
-                  <div className={classes.cardPricing}>
+                  <div className={classes.cardPricing} >
                   
                     <CardMedia
                       className={classes.media}
@@ -240,42 +242,9 @@ export default function Teste() {
       </Container>
 
 
+    <Footer/>
 
 
-      {/* Footer */}
-      <Container maxWidth="md" component="footer" className={classes.footer}>
-
-        <Grid container spacing={4} justify="space-evenly">
-
-          {footers.map((footer) => (
-            <Grid item xs={6} sm={3} key={footer.title}>
-
-              <Typography variant="h6" color="textPrimary" gutterBottom>
-                {footer.title}
-              </Typography>
-
-              <ul>
-                {footer.description.map((item) => (
-                  <li key={item}>
-                    <Linkar href="#" variant="subtitle1" color="textSecondary">
-                      {item}
-                    </Linkar>
-                  </li>
-                ))}
-              </ul>
-
-            </Grid>
-          ))}
-        </Grid>
-
-
-        <Box mt={5}>
-          <Copyright />
-        </Box>
-
-
-      </Container>
-      {/* End footer */}
     </React.Fragment>
   );
 }
