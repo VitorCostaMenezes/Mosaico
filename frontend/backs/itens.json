@@ -276,39 +276,36 @@
                                 "im4": ""
                             }
                         }
-                    ],
-                    "home" :
-                    [
-                        {
-                            "id": "1",
-                            "nome": "Canecas",
-                            "link": "/canecas",
-                            "foto": "/img/home/homeCaneca-01.jpeg",
-                            "foto2": "/img/home/homeSqueeze-01.jpeg",
-                            "foto3": "/img/home/homeCamisa-01.jpg"
-
-
-                        },
-
-                        {
-                            "id": "2",
-                            "nome": "Squeezes",
-                            "link": "/squeezes",
-                            "foto": "/img/home/homeSqueeze-01.jpeg"
-                        },
-                        {
-                            "id": "3",
-                            "nome": "Camisas",
-                            "link": "/camisas",
-                            "foto": "/img/home/homeCamisa-01.jpg"
-                        }
-                       
-
-                       
-                        
                     ]
                 
                 }
+                // ,
+
+                // "home": {
+                //         "caneca":[{
+
+                //             "nome": "Caneca",
+                //             "foto": "",
+                //             "link":""
+                //         }
+                //         ],
+                //         "squeeze":[{
+
+                //             "nome": "Squeeze",
+                //             "foto": "",
+                //             "link":""
+                //         }
+                //         ],
+                //         "camisa":[{
+
+                //             "nome": "Camisa",
+                //             "foto": "",
+                //             "link":""
+                //         }
+                //         ]
+                // }
+
+                
          }
         
 

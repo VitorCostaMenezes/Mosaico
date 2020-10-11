@@ -12,44 +12,52 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 400,
-    width: 400,
+    maxWidth: '100vh',
     textAlign: 'center',
-    margin: 20
+    padding: 10,
+   
+
+
   },
   media: {
-    height: 350,
+    // height: '50vhw'
+    // height: 300,
+    borderRadius: 10
     
   },
   btn:{
       justifyContent: "center",
-      marginBottom: 20
+      marginBottom: 10,
   },
   btn2:{
-      width:350
+      width:300,
+      backgroundColor: '#000',
+      borderRadius: 20,
+      fontWeight: 'bold'
+    
   },
   s:{
     textDecoration: 'none'
-  }
+  },
  
 });
 
 
-export default function CardHome ({item, descricao}) {
+export default function CardHome ({nome, foto}) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
-      <CardActionArea >
+    <Card className={classes.root} >
+      <CardActionArea  >
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title={descricao}
+          image={foto}
+          title={nome}
           component="img"
         />
         <CardContent>
           <Typography gutterBottom variant="h4" component="h4" >
-           {item}
+           {nome}
           </Typography>
          
         </CardContent>
