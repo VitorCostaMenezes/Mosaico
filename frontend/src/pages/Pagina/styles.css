@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 1.2em;
+    /* font-family: 'Roboto', Arial, sans-serif; */
+    /* font-size: 1.5em; */
   }
   
   #page-numbers {
@@ -15,3 +15,19 @@ html, body {
     user-select: none;
     cursor: pointer;
   }
+
+.paginar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 1.5em;
+
+}
+
+
+li {
+  margin: 0 10px;
+}
+

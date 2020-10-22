@@ -1,12 +1,15 @@
 import React, { useState, useEffect} from 'react';
-// import CSS from './styles.css'
+import CardCanecas from '../../components/CardCanecas';
+import CSS from './styles.css'
+
 
 
 export default function Pagina() {
 
-    const [todos, setSotodos] = useState(['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']);
+    // const [todos, setSotodos] = useState(['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']);
+    const [todos, setSotodos] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const [todosPerPage, setTodosPerPage] = useState(4);
+    const [todosPerPage, setTodosPerPage] = useState(6);
     const [upperPageBound, setUpperPageBound] = useState(3);
     const [lowerPageBound, setLowerPageBound] = useState(0);
     const [isPrevBtnActive, setIsPrevBtnActive] = useState('disabled');
@@ -14,25 +17,60 @@ export default function Pagina() {
     const [ pageBound, setPageBound] = useState(3);
 
 
- 
+   
+
     useEffect(() => {
 
-       const getItens = () => {
-       
-        const teste = document.querySelector("ul li.active");
-        // const teste2 = document.querySelector('ul li#'+ currentPage);
-        const teste2 = document.querySelector(`ul li`);
-            
-        // document.querySelectorAll("ul li.active").removeClass('active');
-        // document.querySelector('ul li#'+ currentPage).addClass('active');
+        const getItens = async () => {
+    
+          const res = await fetch('http://localhost:3003/itens');
+          
+          const json = await res.json()
+    
+          const todosItens = json;
+    
+            setSotodos(todosItens.canecas);
 
-        teste.classList.remove('active');
-        teste2.classList.add('active');
+
+            const teste = document.querySelector("ul li.active");
+            // const teste2 = document.querySelector('ul li#'+ currentPage);
+            // const teste2 = document.querySelector(`ul li#tt${currentPage}`);
+            const teste2 = document.querySelector(`ul li`);
+                
+            // document.querySelectorAll("ul li.active").removeClass('active');
+            // document.querySelector('ul li#'+ currentPage).addClass('active');
+    
+            teste.classList.remove('active');
+            teste2.classList.add('active' );
+
+         
         }
     
         getItens();
     
-      })
+      }, [])
+
+
+
+ 
+    // useEffect( () => {
+
+    //    const getItens = async () => {
+       
+    //     const teste = document.querySelector("ul li.active");
+    //     // const teste2 = document.querySelector('ul li#'+ currentPage);
+    //     const teste2 = document.querySelector(`ul li`);
+            
+    //     // document.querySelectorAll("ul li.active").removeClass('active');
+    //     // document.querySelector('ul li#'+ currentPage).addClass('active');
+
+    //     teste.classList.remove('active');
+    //     teste2.classList.add('active');
+    //     }
+    
+    //    getItens();
+    
+    //   })
     
 
     
@@ -44,9 +82,10 @@ export default function Pagina() {
         setCurrentPage(listid)
 
         const teste = document.querySelector("ul li.active");
-        const teste2 = document.querySelector(`ul li`);
+        // const teste2 = document.querySelector(`ul li#tt${currentPage}` );
+        const teste2 = document.querySelector(`ul li` );
             
-        teste.classList.remove('active');
+        // teste.classList.remove('active');
         teste2.classList.add('active');
 
 
@@ -130,10 +169,24 @@ export default function Pagina() {
       const indexOfFirstTodo = indexOfLastTodo - todosPerPage;
       const currentTodos = todos.slice(indexOfFirstTodo, indexOfLastTodo);
 
-      const renderTodos = currentTodos.map((todo, index) => {
-        return <li key={index}>{todo}</li>;
-      });
 
+
+
+
+    //   const renderTodos = currentTodos.map((todo, index) => {
+    //   const renderTodos = currentTodos.map((infos) => {
+    //     // return <li key={id}>{nome} </li>;
+
+    //     return  <CardCanecas infos={infos} /> ;
+    //   });
+
+
+    // const renderTodos = currentTodos;
+
+
+
+
+      
       // Logic for displaying page numbers
       const pageNumbers = [];
       for (let i = 1; i <= Math.ceil(todos.length / todosPerPage); i++) {
@@ -176,9 +229,14 @@ export default function Pagina() {
       }
       return (
         <div>
-          <ul>
-            {renderTodos}
-          </ul>
+          {/* <ul> */}
+            {/* {renderTodos} */}
+          {/* </ul> */}
+
+            <CardCanecas infos={currentTodos} />
+
+        <div className="paginar">
+
           <ul className="pagination">
             {renderPrevBtn}
             {pageDecrementBtn}
@@ -187,10 +245,13 @@ export default function Pagina() {
             {renderNextBtn}
           </ul>
         </div>
+        </div>
       );
 
       }
     
+
+     
   
 
 // import React, { Component } from 'react'

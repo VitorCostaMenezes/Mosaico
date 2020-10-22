@@ -52,7 +52,10 @@ export default function Teste() {
             <CarouselHome />
         </Container>
 
-        <HeroUnit />
+        <HeroUnit titulo={"Catálogo virtual"}
+         texto1={"Confira nossos produtos e preços!"} 
+         texto2={"Para esclarecimento de dúvidas entre em contato conosco através da aba contatos."}
+         />
 
         <BlocoHome infos={allHome} />
 

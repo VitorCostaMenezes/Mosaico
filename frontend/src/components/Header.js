@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     borderBottom: `1px solid ${theme.palette.divider}`,
-    // backgroundColor: 'yellow' 
+    // backgroundColor: '#009c58' 
   },
   toolbar: {
     flexWrap: 'wrap',
@@ -74,8 +74,8 @@ export default function Header() {
                 >
 
               <nav class="my-3">
-                <Linkar variant="button" color="textPrimary" href="#" className={classes.link} >
-                  Quem somos
+                <Linkar variant="button" color="textPrimary" href="/home" className={classes.link} >
+                  Home
                 </Linkar>
                 <Linkar variant="button" color="textPrimary" href="#" className={classes.link}>
                   Produtos
