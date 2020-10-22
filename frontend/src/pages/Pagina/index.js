@@ -9,7 +9,7 @@ export default function Pagina() {
     // const [todos, setSotodos] = useState(['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']);
     const [todos, setSotodos] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const [todosPerPage, setTodosPerPage] = useState(6);
+    const [todosPerPage, setTodosPerPage] = useState(9);
     const [upperPageBound, setUpperPageBound] = useState(3);
     const [lowerPageBound, setLowerPageBound] = useState(0);
     const [isPrevBtnActive, setIsPrevBtnActive] = useState('disabled');

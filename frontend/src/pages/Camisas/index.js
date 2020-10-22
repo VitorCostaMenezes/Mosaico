@@ -1,53 +1,20 @@
-import React , { useState, useEffect }from 'react';
-import { Link } from "react-router-dom";
+import React from 'react';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import PaginaCamisa from '../PaginaCamisa';
 
 
 export default function Camisas () {
    
-  const [allCamisas, setAllCamisas] = useState([]);
  
-  useEffect(() => {
-
-    const getItens = async () => {
-
-      const res = await fetch('http://localhost:3003/itens');
-      // const res = await fetch('http://localhost:1337/Mosaicos/1');
-      // const res = await fetch('https://mosaicopersonalizados.herokuapp.com/Mosaicos/1');
-      
-      const json = await res.json()
-
-      const todosItens = json;
-
-      const todasCamisas = todosItens.camisas.map(({id, nome, descricao, valor, linkMl, foto }) => {
-          return { id, nome, descricao, valor,linkMl,foto };});
-
-
-      setAllCamisas(todasCamisas)
-      console.log(todasCamisas);
-
-     
-    }
-
-    //executando a função acima
-    getItens();
-
-  }, [])
-
-
-
     return (
       <div>
 
-    
-        
-        <Link to="/home" id="home">
-            <span>Home</span>
-        </Link>
+          <Header />
 
+          <PaginaCamisa  />
 
-        <div>
-            <span> Camisas </span>
-        </div>
+          <Footer />
 
       </div>
     )
